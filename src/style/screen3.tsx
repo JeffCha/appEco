@@ -3,7 +3,7 @@ import { VStack, Text, Image, Button, Icon } from 'native-base';
 import CirculoComoFunciona from '../assets/Circulo_Como_funciona.png';
 import CirculoLinkEsquerda from '../assets/Circulo_Link_Esquerda.png';
 import CirculoLinkDireita from '../assets/Circulo_Link_Direita.png';
-import { Ionicons } from '@expo/vector-icons';
+
 
 export default function ComoFunciona({ navigation }) {
   return (
@@ -26,7 +26,7 @@ export default function ComoFunciona({ navigation }) {
       <Button onPress={() => navigation.goBack()} style={{ overflow: 'hidden', position: 'absolute', bottom: 20, left: 20, backgroundColor: 'transparent' }}>
         <Image source={CirculoLinkEsquerda} alt="Botão de volta" width={50} height={50} />
       </Button>
-      <Button onPress={() => navigation.navigate('Principal')} style={{ overflow: 'hidden', position: 'absolute', bottom: 20, right: 20, backgroundColor: 'transparent' }}>
+      <Button onPress={() => navigation.navigate('Categorias')} style={{ overflow: 'hidden', position: 'absolute', bottom: 20, right: 20, backgroundColor: 'transparent' }}>
         <Image source={CirculoLinkDireita} alt="Botão de avançar" width={50} height={50} />
       </Button>
     </VStack>
